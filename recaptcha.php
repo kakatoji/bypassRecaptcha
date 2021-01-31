@@ -1,8 +1,5 @@
 <?php
 function captcha($googleKey,$pageUrl,$apikey){
-#$googleKey = "6LfzRvYUAAAAAGZdJPg88SBETxTTkga9eB2_VHYz";
-#$pageUrl = "https://doge-bitsfree.net/";
-#$apiKey="";
 $kirim= file_get_contents("http://2captcha.com/in.php?key=".$apiKey."&method=userrecaptcha&googlekey=".$googleKey."&pageurl=".$pageUrl);
 $first = array($kirim);
 $result= explode('OK|',$first[0]);
